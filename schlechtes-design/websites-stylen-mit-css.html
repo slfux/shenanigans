@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS - Web Development Kurs</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Times New Roman, serif;
+      font-size: 12px;
+      line-height: 1;
+      background-color: black;
+      color: white;
+      margin: 10px;
+    }
+
+    main {
+      width: 450px;
+    }
+
+    h1 {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+      font-weight: thin;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 25px;
+      font-weight: 900;
+      text-decoration: underline;
+      font-style: italic;
+      color: greenyellow;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 30px;
+      font-weight: 900;
+      text-decoration: underline;
+      font-style: italic;
+      color: greenyellow;
+    }
+
+    p {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-decoration: underline;
+    }
+
+    img {
+      width: 800px;
+      height: auto;
+    }
+
+    main {
+      border: 1px dotted blue;
+    }
+
+    section {
+      margin-bottom: -15px;
+
+    }
+
+    ul {
+      padding-left: 15px;
+    }
+
+    /* CSS Kombinatoren */
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    /* CSS Pseudo-Klassen */
+    a:hover {
+      font-size: larger;
+      text-decoration: underline;
+      color: red;
+      padding: 10px;
+    }
+
+    /* CSS Ids */
+    #logo {
+      width: 150px;
+      height: auto;
+    }
+
+    /* CSS Klassen */
+    .button {
+      display: inline-block;
+      background-color: yellow;
+      color: white;
+      text-decoration: none;
+      padding: 4px 20px 100px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">
+      <img id="logo" src="https://via.placeholder.com/150x150" alt="Logo der Seite" width="150" height="150">
+      <span>WebDev</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="websites-strukturieren-mit-html.html">HTML</a></li>
+        <li><a href="funktionalitaet-mittels-javasript.html">CSS</a></li>
+        <li><a href="grundlagen-webdesign.html">Webdesign</a></li>
+        <li><a href="websites-stylen-mit-css.html">JavaScript</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Websites stylen mit CSS</h1>
+
+    <section>
+
+      <h2>Was ist CSS?</h2>
+
+      <p>
+        CSS steht für Cascading Style Sheets und wird verwendet um das
+        Erscheinungsbild von Webseiten zu gestalten. Farben Schriften
+        Abstände Größen und Layouts können mit CSS definiert werden.
+      </p>
+
+      <figure>
+        <img src="https://via.placeholder.com/800x300" alt="CSS Beispiel">
+
+        <figcaption>
+          Beispiel einer mit CSS gestalteten Webseite.
+        </figcaption>
+      </figure>
+
+      <details open>
+
+        <summary>Warum CSS verwenden?</summary>
+
+        <p>
+          Ohne CSS erscheinen Webseiten meist sehr schlicht. Durch CSS
+          lassen sich Inhalte visuell strukturieren und hervorheben.
+        </p>
+
+      </details>
+
+    </section>
+
+    <section>
+
+      <h2>Eigenschaften im Überblick</h2>
+
+      <dl>
+        <dt>color</dt>
+        <dd>Legt die Textfarbe fest.</dd>
+
+        <dt>background-color</dt>
+        <dd>Legt die Hintergrundfarbe fest.</dd>
+
+        <dt>font-size</dt>
+        <dd>Bestimmt die Schriftgröße.</dd>
+
+        <dt>margin</dt>
+        <dd>Definiert Außenabstände.</dd>
+
+        <dt>padding</dt>
+        <dd>Definiert Innenabstände.</dd>
+      </dl>
+
+    </section>
+
+    <section>
+
+      <h2>CSS-Beispiel</h2>
+
+      <pre><code>
+h1 {
+    color: blue;
+    font-size: 32px;
+}
+
+p {
+    color: red;
+}
+    </code></pre>
+
+    </section>
+
+    <section>
+
+      <h2>Beliebte Selektoren</h2>
+
+      <table>
+
+        <caption>
+          Übersicht typischer CSS-Selektoren
+        </caption>
+
+        <thead>
+          <tr>
+            <th>Selektor</th>
+            <th>Beispiel</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Elementselektor</td>
+            <td>p</td>
+          </tr>
+
+          <tr>
+            <td>Klassenselektor</td>
+            <td>.button</td>
+          </tr>
+
+          <tr>
+            <td>ID-Selektor</td>
+            <td>#main</td>
+          </tr>
+
+          <tr>
+            <td>Pseudoklasse</td>
+            <td>:hover</td>
+          </tr>
+        </tbody>
+
+      </table>
+
+    </section>
+
+    <aside>
+
+      <h2>Merke</h2>
+
+      <blockquote>
+        Gutes CSS verbessert die Lesbarkeit und Orientierung einer Webseite.
+      </blockquote>
+
+      <cite>Vorlesung Web Development</cite>
+
+    </aside>
+
+    <section>
+
+      <h2>Nützliche Ressourcen</h2>
+
+      <ol>
+        <li>
+          <a href="https://developer.mozilla.org/" target="_blank">
+            MDN Web Docs
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.w3.org/" target="_blank">
+            World Wide Web Consortium
+          </a>
+        </li>
+
+        <li>
+          <a href="https://css-tricks.com/" target="_blank">
+            CSS Tricks
+          </a>
+        </li>
+      </ol>
+
+    </section>
+
+    <section>
+
+      <h2>Praxisaufgabe</h2>
+
+      <p>
+        Erstellen Sie eine Webseite und verändern Sie Schriftarten,
+        Farben, Abstände und Links mithilfe eigener CSS-Regeln.
+      </p>
+
+      <footer>
+        <p>Abgabe bis nächste Woche.</p>
+      </footer>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Wintersemester 2026/27</p>
+  </footer>
+
+</body>
+
+</html>

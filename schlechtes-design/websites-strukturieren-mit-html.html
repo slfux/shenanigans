@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Web Development Kurs</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Times New Roman, serif;
+      font-size: 12px;
+      line-height: 1;
+      background-color: black;
+      color: white;
+      margin: 10px;
+    }
+
+    main {
+      width: 450px;
+    }
+
+    h1 {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+      font-weight: thin;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 25px;
+      font-weight: 900;
+      text-decoration: underline;
+      font-style: italic;
+      color: greenyellow;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 30px;
+      font-weight: 900;
+      text-decoration: underline;
+      font-style: italic;
+      color: greenyellow;
+    }
+
+    p {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-decoration: underline;
+    }
+
+    img {
+      width: 800px;
+      height: auto;
+    }
+
+    main {
+      border: 1px dotted blue;
+    }
+
+    section {
+      margin-bottom: -15px;
+
+    }
+
+    ul {
+      padding-left: 15px;
+    }
+
+    /* CSS Kombinatoren */
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    /* CSS Pseudo-Klassen */
+    a:hover {
+      font-size: larger;
+      text-decoration: underline;
+      color: red;
+      padding: 10px;
+    }
+
+    /* CSS Ids */
+    #logo {
+      width: 150px;
+      height: auto;
+    }
+
+    /* CSS Klassen */
+    .button {
+      display: inline-block;
+      background-color: yellow;
+      color: white;
+      text-decoration: none;
+      padding: 4px 20px 100px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">
+      <img id="logo" src="https://via.placeholder.com/150x150" alt="Logo der Seite" width="150" height="150">
+      <span>WebDev</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="websites-strukturieren-mit-html.html">HTML</a></li>
+        <li><a href="funktionalitaet-mittels-javasript.html">CSS</a></li>
+        <li><a href="grundlagen-webdesign.html">Webdesign</a></li>
+        <li><a href="websites-stylen-mit-css.html">JavaScript</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Websites strukturieren mit HTML</h1>
+
+    <section>
+      <h2>Was ist HTML?</h2>
+
+      <p>
+        HTML steht für HyperText Markup Language und wird verwendet um
+        Inhalte einer Webseite in eine sinnvolle Struktur zu bringen.
+      </p>
+
+      <blockquote>
+        HTML beschreibt die Bedeutung von Inhalten und nicht deren Aussehen.
+      </blockquote>
+
+      <cite>MDN Web Docs</cite>
+
+    </section>
+
+    <section>
+      <h2>Wichtige Elemente</h2>
+
+      <table>
+        <caption>
+          Häufig verwendete HTML-Elemente
+        </caption>
+
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Zweck</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>h1</td>
+            <td>Hauptüberschrift</td>
+          </tr>
+
+          <tr>
+            <td>nav</td>
+            <td>Navigation</td>
+          </tr>
+
+          <tr>
+            <td>article</td>
+            <td>Eigenständiger Inhalt</td>
+          </tr>
+
+          <tr>
+            <td>footer</td>
+            <td>Abschlussbereich</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Weitere Ressourcen</h2>
+
+      <p>
+        Eine ausführliche Dokumentation findet sich bei
+        <a href="https://developer.mozilla.org/" target="_blank">
+          Mozilla Developer Network
+        </a>.
+      </p>
+
+      <p>
+        Das W3C veröffentlicht außerdem Empfehlungen für die
+        Entwicklung von Webseiten.
+      </p>
+
+      <a class="button" href="#">
+        HTML lernen
+      </a>
+    </section>
+
+    <aside>
+
+      <h2>Hinweis</h2>
+
+      <p>
+        Für diese Woche soll eine HTML-Seite mit mindestens drei
+        semantischen Bereichen erstellt werden.
+      </p>
+
+    </aside>
+
+    <section>
+
+      <h2>HTML-Beispiel</h2>
+
+      <pre>
+        &lt;article&gt;
+          &lt;h2&gt;Beitrag&lt;/h2&gt;
+          &lt;p&gt;Inhalt&lt;/p&gt;
+        &lt;/article&gt;
+    </pre>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Wintersemester 2026/27</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webdesign - Web Development Kurs</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Times New Roman, serif;
+      font-size: 12px;
+      line-height: 1;
+      background-color: black;
+      color: white;
+      margin: 10px;
+    }
+
+    main {
+      width: 450px;
+    }
+
+    h1 {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+      font-weight: thin;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 25px;
+      font-weight: 900;
+      text-decoration: underline;
+      font-style: italic;
+      color: greenyellow;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 30px;
+      font-weight: 900;
+      text-decoration: underline;
+      font-style: italic;
+      color: greenyellow;
+    }
+
+    p {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-decoration: underline;
+    }
+
+    img {
+      width: 800px;
+      height: auto;
+    }
+
+    main {
+      border: 1px dotted blue;
+    }
+
+    section {
+      margin-bottom: -15px;
+
+    }
+
+    ul {
+      padding-left: 15px;
+    }
+
+    /* CSS Kombinatoren */
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    /* CSS Pseudo-Klassen */
+    a:hover {
+      font-size: larger;
+      text-decoration: underline;
+      color: red;
+      padding: 10px;
+    }
+
+    /* CSS Ids */
+    #logo {
+      width: 150px;
+      height: auto;
+    }
+
+    /* CSS Klassen */
+    .button {
+      display: inline-block;
+      background-color: yellow;
+      color: white;
+      text-decoration: none;
+      padding: 4px 20px 100px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">
+      <img id="logo" src="https://via.placeholder.com/150x150" alt="Logo der Seite" width="150" height="150">
+      <span>WebDev</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="websites-strukturieren-mit-html.html">HTML</a></li>
+        <li><a href="funktionalitaet-mittels-javasript.html">CSS</a></li>
+        <li><a href="grundlagen-webdesign.html">Webdesign</a></li>
+        <li><a href="websites-stylen-mit-css.html">JavaScript</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Grundlagen des Webdesigns</h1>
+
+    <section>
+
+      <h2>Warum Webdesign wichtig ist</h2>
+
+      <p>
+        Gutes Webdesign unterstützt Nutzer dabei Informationen
+        schnell zu finden und Inhalte leichter zu verstehen.
+        Schlechtes Design erschwert Orientierung und Lesbarkeit.
+      </p>
+
+      <picture>
+
+        <source media="(min-width: 800px)" srcset="https://via.placeholder.com/800x250">
+
+        <img src="https://via.placeholder.com/400x250" alt="Beispiel einer Webseite">
+
+      </picture>
+
+    </section>
+
+    <section>
+
+      <h2>Grundprinzipien</h2>
+
+      <ol>
+        <li>Visuelle Hierarchie</li>
+        <li>Konsistenz</li>
+        <li>Kontrast</li>
+        <li>Lesbarkeit</li>
+        <li>Weißraum</li>
+      </ol>
+
+    </section>
+
+    <section>
+
+      <h2>Designregeln im Überblick</h2>
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>Prinzip</th>
+            <th>Ziel</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>Kontrast</td>
+            <td>Elemente unterscheiden</td>
+          </tr>
+
+          <tr>
+            <td>Hierarchie</td>
+            <td>Wichtigkeit zeigen</td>
+          </tr>
+
+          <tr>
+            <td>Weißraum</td>
+            <td>Struktur schaffen</td>
+          </tr>
+
+          <tr>
+            <td>Konsistenz</td>
+            <td>Orientierung verbessern</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </section>
+
+    <article>
+
+      <header>
+        <h2>Typografie</h2>
+      </header>
+
+      <p>
+        Schriftarten, Zeilenlängen und Zeilenabstände beeinflussen
+        stark wie einfach Texte gelesen werden können.
+      </p>
+
+      <footer>
+        <a href="#">Mehr zur Typografie</a>
+      </footer>
+
+    </article>
+
+    <article>
+
+      <header>
+        <h2>Farbgestaltung</h2>
+      </header>
+
+      <p>
+        Farben helfen bei der Orientierung und können Informationen
+        gruppieren oder hervorheben.
+      </p>
+
+      <footer>
+        <a href="#">Mehr zur Farbgestaltung</a>
+      </footer>
+
+    </article>
+
+    <article>
+
+      <header>
+        <h2>Responsive Design</h2>
+      </header>
+
+      <p>
+        Webseiten sollten auf Smartphones Tablets und Desktop-Geräten
+        gleichermaßen nutzbar sein.
+      </p>
+
+      <footer>
+        <a href="#">Mehr zu Responsive Design</a>
+      </footer>
+
+    </article>
+
+    <aside>
+
+      <h2>Design-Tipp</h2>
+
+      <blockquote>
+        Nutzer lesen Webseiten selten von Anfang bis Ende.
+        Sie scannen Inhalte meist nach relevanten Informationen.
+      </blockquote>
+
+      <cite>Steve Krug</cite>
+
+    </aside>
+
+    <section>
+
+      <h2>Beispiel für schlechten Kontrast</h2>
+
+      <output>
+        Weißer Text auf gelbem Hintergrund ist schwer lesbar.
+      </output>
+
+    </section>
+
+    <section>
+
+      <h2>Checkliste</h2>
+
+      <form>
+
+        <fieldset>
+
+          <legend>Wichtige Kriterien</legend>
+
+          <label>
+            <input type="checkbox">
+            Gute Lesbarkeit
+          </label>
+
+          <br>
+
+          <label>
+            <input type="checkbox">
+            Klare Navigation
+          </label>
+
+          <br>
+
+          <label>
+            <input type="checkbox">
+            Konsistente Gestaltung
+          </label>
+
+        </fieldset>
+
+      </form>
+
+    </section>
+
+    <section>
+
+      <h2>Glossar</h2>
+
+      <dl>
+
+        <dt>Weißraum</dt>
+        <dd>Freier Platz zwischen Elementen.</dd>
+
+        <dt>Hierarchie</dt>
+        <dd>Visuelle Gewichtung von Informationen.</dd>
+
+        <dt>Kontrast</dt>
+        <dd>Unterschied zwischen Elementen.</dd>
+
+      </dl>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Wintersemester 2026/27</p>
+  </footer>
+
+</body>
+
+</html>
